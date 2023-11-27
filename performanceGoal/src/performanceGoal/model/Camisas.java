@@ -3,13 +3,12 @@ package performanceGoal.model;
 public class Camisas extends Roupa {
 
 	boolean mangaLonga;
-	int tipoGola;
+	String estampa;
 
-	public Camisas(String nomePeca, String cor, char tamanho, int tipo, int estoque, float preco, boolean mangaLonga,
-			int tipoGola) {
-		super(nomePeca, cor, tamanho, tipo, estoque, preco);
+	public Camisas(String tecido, String cor, char tamanho, int estoque, float preco, boolean mangaLonga, String estampa) {
+		super(tecido, cor, tamanho, estoque, preco);
 		this.mangaLonga = mangaLonga;
-		this.tipoGola = tipoGola;
+		this.estampa = estampa;
 	}
 
 	public boolean isMangaLonga() {
@@ -20,19 +19,11 @@ public class Camisas extends Roupa {
 		this.mangaLonga = mangaLonga;
 	}
 	
-	public int getTipoGola() {
-		return tipoGola;
-	}
-
-	public void setTipoGola(int tipoGola) {
-		this.tipoGola = tipoGola;
-	}
-	
     @Override
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("\t* É manga longa: " + this.mangaLonga);
-		System.out.println("\t* Tipo da gola: " + this.tipoGola);
+		System.out.println("\t* Estampa: " + this.estampa);
 		System.out.println("\n---------------------------------------------\n");
 
 	}

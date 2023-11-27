@@ -2,27 +2,26 @@ package performanceGoal.model;
 
 public abstract class Roupa {
 
-	private String nomePeca, cor;
+	private String tecido, cor;
 	private char tamanho;
-	private int tipo, estoque;
+	private int estoque;
 	private float preco;
 
-	public Roupa(String nomePeca, String cor, char tamanho, int tipo, int estoque, float preco) {
+	public Roupa(String tecido, String cor, char tamanho, int estoque, float preco) {
 		super();
-		this.nomePeca = nomePeca;
+		this.tecido = tecido;
 		this.cor = cor;
 		this.tamanho = tamanho;
-		this.tipo = tipo;
 		this.estoque = estoque;
 		this.preco = preco;
 	}
 
-	public String getNomePeca() {
-		return nomePeca;
+	public String gettecido() {
+		return tecido;
 	}
 
-	public void setNomePeca(String nomePeca) {
-		this.nomePeca = nomePeca;
+	public void settecido(String tecido) {
+		this.tecido = tecido;
 	}
 
 	public String getCor() {
@@ -39,14 +38,6 @@ public abstract class Roupa {
 
 	public void setTamanho(char tamanho) {
 		this.tamanho = tamanho;
-	}
-
-	public int getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
 	}
 
 	public int getEstoque() {
@@ -69,10 +60,9 @@ public abstract class Roupa {
 
 		System.out.println("\n---------------------------------------------");
 		System.out.println("\t\tDados da peça\n");
-		System.out.println("\t* Nome da peça: " + this.nomePeca);
+		System.out.println("\t* Nome da peça: " + this.tecido);
 		System.out.println("\t* Cor: " + this.cor);
 		System.out.println("\t* Tamanho: " + this.tamanho);
-		System.out.println("\t* Tipo: " + this.tipo);
 		System.out.println("\t* Estoque: " + this.estoque);
 		System.out.println("\t* Preço: " + this.preco);
 	}

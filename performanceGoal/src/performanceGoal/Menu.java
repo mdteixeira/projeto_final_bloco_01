@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import performanceGoal.model.Calcas;
+import performanceGoal.model.Camisas;
+import performanceGoal.model.Roupa;
+
 public class Menu {
 
 	static Scanner sc = new Scanner(System.in);
@@ -12,7 +16,16 @@ public class Menu {
 	public static void main(String[] args) {
 
 		int operacao = 0;
-
+		
+		
+		// Testes
+		Roupa camisa1 = new Camisas("algodão", "Cinza", 'P', 32, 45.90f, true, "Skinny");
+		Roupa calca1 = new Calcas("jeans", "preta", 'P', 32, 45.90f, "Floral", false);
+		
+		camisa1.visualizar();
+		calca1.visualizar();
+		///////
+		
 		while (true) {
 
 			System.out.println("*********************************************");
