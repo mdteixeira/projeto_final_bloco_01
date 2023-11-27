@@ -1,4 +1,4 @@
-package performanceGo;
+package performanceGoal;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
