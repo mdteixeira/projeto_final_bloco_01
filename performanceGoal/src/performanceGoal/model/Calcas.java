@@ -5,8 +5,8 @@ public class Calcas extends Roupa {
 	String corte;
 	boolean shorts;
 
-	public Calcas(String tecido, String cor, char tamanho, int estoque, float preco, String corte, boolean shorts) {
-		super(tecido, cor, tamanho, estoque, preco);
+	public Calcas(int Id, String tecido, String cor, char tamanho, int estoque, float preco, String corte, boolean shorts) {
+		super(Id, tecido, cor, tamanho, estoque, preco);
 		this.shorts = shorts;
 		this.corte = corte;
 	}

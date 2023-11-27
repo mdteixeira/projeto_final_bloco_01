@@ -4,11 +4,12 @@ public abstract class Roupa {
 
 	private String tecido, cor;
 	private char tamanho;
-	private int estoque;
+	private int Id, estoque;
 	private float preco;
 
-	public Roupa(String tecido, String cor, char tamanho, int estoque, float preco) {
+	public Roupa(int Id, String tecido, String cor, char tamanho, int estoque, float preco) {
 		super();
+		this.Id = Id;
 		this.tecido = tecido;
 		this.cor = cor;
 		this.tamanho = tamanho;
@@ -20,7 +21,7 @@ public abstract class Roupa {
 		return tecido;
 	}
 
-	public void settecido(String tecido) {
+	public void setTecido(String tecido) {
 		this.tecido = tecido;
 	}
 
@@ -60,7 +61,8 @@ public abstract class Roupa {
 
 		System.out.println("\n---------------------------------------------");
 		System.out.println("\t\tDados da peça\n");
-		System.out.println("\t* Nome da peça: " + this.tecido);
+		System.out.println("\t* Id da peça: " + this.Id);
+		System.out.println("\t* Tecido da peça: " + this.tecido);
 		System.out.println("\t* Cor: " + this.cor);
 		System.out.println("\t* Tamanho: " + this.tamanho);
 		System.out.println("\t* Estoque: " + this.estoque);
@@ -82,6 +84,14 @@ public abstract class Roupa {
 	// Adicionar peças ao estoque
 	public void adicionarPeca(int valor) {
 		this.setEstoque(this.getEstoque() + valor);
+	}
+
+	public int getId() {
+		return Id;
+	}
+
+	public void setId(int id) {
+		Id = id;
 	}
 
 }

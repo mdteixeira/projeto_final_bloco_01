@@ -5,8 +5,8 @@ public class Camisas extends Roupa {
 	boolean mangaLonga;
 	String estampa;
 
-	public Camisas(String tecido, String cor, char tamanho, int estoque, float preco, boolean mangaLonga, String estampa) {
-		super(tecido, cor, tamanho, estoque, preco);
+	public Camisas(int Id, String tecido, String cor, char tamanho, int estoque, float preco, boolean mangaLonga, String estampa) {
+		super(Id, tecido, cor, tamanho, estoque, preco);
 		this.mangaLonga = mangaLonga;
 		this.estampa = estampa;
 	}
