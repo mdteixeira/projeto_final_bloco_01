@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Menu {
 
 	static Scanner sc = new Scanner(System.in);
-	static String urlRepo = "https://github.com/mdteixeira/performanceGo";
+	static String urlRepo = "https://github.com/mdteixeira/projeto_final_bloco_01";
 
 	public static void main(String[] args) {
 
@@ -41,26 +41,29 @@ public class Menu {
 			}
 
 			switch (operacao) {
-			case 1 -> {System.out.println("Opção 1 > Criar item");
+			case 1 -> {
+				System.out.println("Opção 1 > Criar item");
 			}
-			case 2 -> {System.out.println("Opção 1 > Criar item");
+			case 2 -> {
+				System.out.println("Opção 2 > Listar todos os itens");
 			}
-			case 3 -> {System.out.println("Opção 1 > Criar item");
+			case 3 -> {
+				System.out.println("Opção 3 > Buscar item por ID");
 			}
-			case 4 -> {System.out.println("Opção 1 > Criar item");
+			case 4 -> {
+				System.out.println("Opção 4 > Atualizar dados do item");
 			}
-			case 5 -> {System.out.println("Opção 1 > Criar item");
+			case 5 -> {
+				System.out.println("Opção 1 > Apagar item");
 			}
-			case 6 -> {System.out.println("Opção 1 > Criar item");
+			case 6 -> {
+				System.out.println("Opção 1 > Adicionar item ao carrinho");
 			}
-			case 7 -> {System.out.println("Opção 1 > Criar item");
-			}
-			case 8 -> {System.out.println("Opção 1 > Criar item");
-			}
-			case 9 -> {System.out.println("Opção 1 > Criar item");
+			case 7 -> {
+				System.out.println("Opção 1 > Remover do carrinho");
 			}
 			case 0 -> Finalizar();
-			
+
 			default -> {
 				System.err.println("Erro: Operação inválida!");
 				keyPress();
